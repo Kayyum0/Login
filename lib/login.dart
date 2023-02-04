@@ -71,11 +71,11 @@ class _MyLoginState extends State<MyLogin> {
                               Text(
                                 'Sign in',
                                 style: TextStyle(
-                                    fontSize: 27, fontWeight: FontWeight.w700),
+                                    fontSize: 27, fontWeight: FontWeight.w700, color: Colors.white),
                               ),
                               CircleAvatar(
                                 radius: 30,
-                                backgroundColor: Color(0xff4c505b),
+                                backgroundColor: Colors.transparent,
                                 child: IconButton(
                                     color: Colors.white,
                                     onPressed: () {},
@@ -96,11 +96,11 @@ class _MyLoginState extends State<MyLogin> {
                                   Navigator.pushNamed(context, 'register');
                                 },
                                 child: Text(
-                                  'Sign Up',
+                                  'Regsiter Here',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
-                                      color: Color(0xff4c505b),
+                                      color: Colors.white,
                                       fontSize: 18),
                                 ),
                                 style: ButtonStyle(),
@@ -111,7 +111,7 @@ class _MyLoginState extends State<MyLogin> {
                                     'Forgot Password',
                                     style: TextStyle(
                                       decoration: TextDecoration.underline,
-                                      color: Color(0xff4c505b),
+                                      color: Colors.white,
                                       fontSize: 18,
                                     ),
                                   )),
