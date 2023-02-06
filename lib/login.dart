@@ -7,6 +7,7 @@ class MyLogin extends StatefulWidget {
   _MyLoginState createState() => _MyLoginState();
 }
 
+
 class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
@@ -39,9 +40,9 @@ class _MyLoginState extends State<MyLogin> {
                       child: Column(
                         children: [
                           TextField(
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(color: Colors.white),
                             decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
+                                fillColor: Colors.transparent,
                                 filled: true,
                                 hintText: "Email",
                                 border: OutlineInputBorder(
@@ -52,10 +53,10 @@ class _MyLoginState extends State<MyLogin> {
                             height: 30,
                           ),
                           TextField(
-                            style: TextStyle(),
+                            style: TextStyle(color: Colors.white),
                             obscureText: true,
                             decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
+                                fillColor: Colors.transparent,
                                 filled: true,
                                 hintText: "Password",
                                 border: OutlineInputBorder(
@@ -96,7 +97,7 @@ class _MyLoginState extends State<MyLogin> {
                                   Navigator.pushNamed(context, 'register');
                                 },
                                 child: Text(
-                                  'Regsiter Here',
+                                  'Register Here',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
@@ -108,7 +109,7 @@ class _MyLoginState extends State<MyLogin> {
                               TextButton(
                                   onPressed: () {},
                                   child: Text(
-                                    'Forgot Password',
+                                   'Forgot Password ?',
                                     style: TextStyle(
                                       decoration: TextDecoration.underline,
                                       color: Colors.white,
