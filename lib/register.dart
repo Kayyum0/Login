@@ -130,7 +130,7 @@ class _MyRegisterState extends State<MyRegister> {
                                 child: IconButton(
                                     color: Colors.white,
                                     onPressed: () {},
-                                    icon: Icon(
+                                   icon: Icon(
                                       Icons.arrow_forward,
                                     )),
                               )
